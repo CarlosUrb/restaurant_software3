@@ -13,8 +13,8 @@ ContextMap  restaurantContextMap{
 
 }
 
-BoundedContext VentaContext{}
+BoundedContext VentaContext {}
 BoundedContext DeliveryContext {}
-BoundedContext ReservaContext{}
-BoundedContext PedidoContext{}
-BoundedContext RecursosHumanosContext{}
+BoundedContext ReservaContext {}
+BoundedContext PedidoContext {}
+BoundedContext RecursosHumanosContext {}
