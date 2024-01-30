@@ -1,0 +1,25 @@
+digraph "ContextMapGraph" {
+graph ["imagepath"="/tmp/GraphvizJava"]
+"DeliveryContext" ["margin"="0.3","orientation"="84","shape"="egg","fontsize"="16","style"="bold","label"="DeliveryContext\n","fontname"="sans-serif"]
+"PedidoContext" ["margin"="0.3","orientation"="258","shape"="egg","fontsize"="16","style"="bold","label"="PedidoContext\n","fontname"="sans-serif"]
+"VentaContext" ["margin"="0.3","orientation"="166","shape"="egg","fontsize"="16","style"="bold","label"="VentaContext\n","fontname"="sans-serif"]
+"ReservaContext" ["margin"="0.3","orientation"="268","shape"="egg","fontsize"="16","style"="bold","label"="ReservaContext\n","fontname"="sans-serif"]
+"RecursosHumanosContext" ["margin"="0.3","orientation"="27","shape"="egg","fontsize"="16","style"="bold","label"="RecursosHumanosContext\n","fontname"="sans-serif"]
+"PedidoContext" -> "VentaContext" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">D</td></tr>
+</table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">U</td></tr>
+</table>>,"style"="bold","label"="Customer/Supplier","dir"="none","fontname"="sans-serif"]
+"VentaContext" -> "DeliveryContext" ["fontsize"="12","style"="bold","label"="Partnership","dir"="none","fontname"="sans-serif"]
+"VentaContext" -> "ReservaContext" ["fontsize"="12","style"="bold","label"="Partnership","dir"="none","fontname"="sans-serif"]
+"RecursosHumanosContext" -> "PedidoContext" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">D</td></tr>
+</table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">U</td></tr>
+</table>>,"style"="bold","label"="Customer/Supplier","dir"="none","fontname"="sans-serif"]
+"RecursosHumanosContext" -> "DeliveryContext" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">D</td></tr>
+</table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">U</td></tr>
+</table>>,"style"="bold","label"="Customer/Supplier","dir"="none","fontname"="sans-serif"]
+}
