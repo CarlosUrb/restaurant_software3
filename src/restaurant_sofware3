@@ -1,0 +1,20 @@
+ContextMap  restaurantContextMap{
+    contains VentaContext
+    contains DeliveryContext
+    contains ReservaContext
+    contains PedidoContext
+    contains RecursosHumanosContext
+    
+    VentaContext [P]<->[P] DeliveryContext
+    VentaContext [P]<->[P] ReservaContext
+    PedidoContext [U,S]->[D,C] VentaContext
+    RecursosHumanosContext [U,S]->[D,C] PedidoContext
+    RecursosHumanosContext [U,S]->[D,C] DeliveryContext
+
+}
+
+BoundedContext VentaContext{}
+BoundedContext DeliveryContext {}
+BoundedContext ReservaContext{}
+BoundedContext PedidoContext{}
+BoundedContext RecursosHumanosContext{}
